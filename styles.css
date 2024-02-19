@@ -1,0 +1,8 @@
+.triangle-right {
+	width: 0;
+	height: 0;
+    top:1/2;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #323ea0;
+	border-bottom: 25px solid transparent;
+}
