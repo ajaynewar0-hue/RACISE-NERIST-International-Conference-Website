@@ -1,9 +1,29 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .triangle-right {
 	width: 0;
 	height: 0;
-    top:1/2;
+	top: 1/2;
 	border-top: 25px solid transparent;
 	border-left: 50px solid #323ea0;
 	border-bottom: 25px solid transparent;
 	margin-bottom: 20px;
+}
+
+.about_me {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: calc(1.2em * 10);
+}
+
+@media (min-width: 781px) {
+	.about_me {
+		white-space: normal;
+		max-height: none;
+		overflow: visible;
+		text-overflow: initial;
+	}
 }
