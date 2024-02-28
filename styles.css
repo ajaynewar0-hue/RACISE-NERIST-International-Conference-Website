@@ -33,7 +33,6 @@ html {
 	height: 100vh;
 	background: url('1.jpg') center/cover no-repeat;
 	animation: changeImage 32s infinite;
-	opacity: 80%;
 }
 
 @keyframes changeImage {
