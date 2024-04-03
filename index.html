@@ -75,19 +75,10 @@
                 </div>
             </div>
         </nav>
-        <section id="hero" class="relative bg-gray-900 text-white p-10 justify-center items-center self-center text-center">
-            <!-- Circle with Image Background -->
-            <div class="hidden lg:block absolute top-20 left-1/4 w-96 h-96 bg-cover bg-center rounded-full opacity-50" style="background-image: url('1.jpg');"></div>
-        
-            <!-- Circle with Image Background -->
-            <div class="hidden lg:block absolute bottom-0 left-0 transform translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cover bg-center rounded-full opacity-50" style="background-image: url('2.jpg');"></div>
-        
-            <!-- Circle with Image Background -->
-            <div class="hidden lg:block absolute bottom-10 right-80 w-96 h-96 bg-cover bg-center rounded-full opacity-50" style="background-image: url('3.jpg');"></div>
-            <div class="hidden lg:block absolute top-40 right-40 w-96 h-96 bg-cover bg-center rounded-full opacity-50" style="background-image: url('6.jpg');"></div>
-        
-            <div class="min-w-screen flex h-screen mx-auto relative">
-                <div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md mx-auto h-40 justify-center self-center items-center text-center relative">
+
+        <section id="hero" class="relative bg-gray-900 text-white justify-center items-center self-center text-center my-20 py-10">
+            <div class="flex flex-col md:flex-row mx-auto relative">
+                <div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md mx-auto justify-center self-center items-center text-center relative md:order-1">
                     <h1 class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-extrabold text-center relative z-10">
                         <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
                             International Conference on Recent Advancements in Computational <br />
@@ -95,19 +86,24 @@
                         </span>
                         <span class="sm:block text-transparent">(RACISE-2024)</span>
                     </h1>
-                    <div class="flex flex-wrap justify-center">
-                        <h1 class="text-lg sm:text-lg md:text-lg lg:text-xl xl:text-xl 2xl:text-xl font-bold text-center text-white relative z-10">
+                    <div class="flex flex-wrap justify-center pb-8">
+                        <h2 class="text-lg sm:text-lg md:text-lg lg:text-xl xl:text-xl 2xl:text-xl font-bold text-center text-white relative z-10">
                             Event Date: 19th-20th, December, 2024
-                        </h1>
+                        </h2>
                     </div>
+                </div>
+                <div class="w-full md:w-1/2 md:order-2">
+                    <img src="jubilee.jpg" alt="jubilee" class="w-full md:w-auto" srcset="">
                 </div>
             </div>
         </section>
+        
+        
               
-        <div id="about" class="relative overflow-hidden mt-16 mb-4">
+        <div id="about" class="relative overflow-hidden mt-16">
             <div class="max-w-7xl mx-auto">
                 <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                    <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-96 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                         <polygon points="50,0 100,0 50,100 50,100"></polygon>
                     </svg>
                     <div class="pt-1"></div>
@@ -127,15 +123,16 @@
                                 Rapid breakthroughs, fueled by the demand for high-performance and energy-efficient systems, take center stage as we collectively address the pressing issues of current time under the theme "Technology and
                                 Its Promise for Sustainable Development."
                             </p>
+                            <button class="read-more-button" onclick="toggleReadMore('about_institute')">Read More</button>
                         </div>
                     </main>
                 </div>
             </div>
             <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img class="h-full w-full object-cover object-top sm:h-full md:h-full lg:w-full lg:h-full" src="jublee.jpg" alt="" />
+                <img class="h-full w-full object-cover object-top sm:h-full md:h-full lg:w-full lg:h-full" src="1.jpg" alt="" />
             </div>
         </div>
-        <div id="about" class="relative overflow-hidden mt-4 mb-16 flex flex-row">
+        <div id="about" class="relative overflow-hidden mt-4 flex flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row sm:flex-col">
             <div class="max-w-7xl mx-auto">
                 <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                     <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -150,6 +147,7 @@
                                 an applied science discipline from 10th standard to degree levels. It also offers various postgraduate (M.Tech, MBA and MSc) and doctoral programmes in all branches of engineering, applied science, physics,
                                 chemistry, mathematics, humanities and management.
                             </p>
+                            <button class="read-more-button" onclick="toggleReadMore('about_institute')">Read More</button>
                         </div>
                     </main>
                 </div>
@@ -167,6 +165,7 @@
                                 department is currently run 16 Nos. of experienced as well as young motivated well-qualified faculty members from reputed institutes like IISc, IITs, NITs, JU, IT-BHU, BESU, NERIST etc. and experienced
                                 supporting staff to generate human resources to cater the fast growing industrial and academic need of the country at various levels.
                             </p>
+                            <button class="read-more-button" onclick="toggleReadMore('about_institute')">Read More</button>
                         </div>
                     </main>
                 </div>

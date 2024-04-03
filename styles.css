@@ -13,10 +13,14 @@ html {
 }
 
 .about_me {
-	white-space: nowrap;
+	white-space: wrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-height: calc(1.2em * 10);
+	max-height: calc(1.2em * 20);
+}
+
+.read-more-content {
+	display: none;
 }
 
 @media (min-width: 781px) {
