@@ -27,37 +27,3 @@ html {
 		text-overflow: initial;
 	}
 }
-
-#hero {
-    position: relative;
-    height: 100vh;
-    background: url('1.jpg') center/cover no-repeat;
-    animation: changeImage 32s infinite;
-}
-
-@keyframes changeImage {
-    0%, 100% {
-        background-image: url('1.jpg');
-    }
-    12.5% {
-        background-image: url('2.jpg');
-    }
-    25% {
-        background-image: url('3.jpg');
-    }
-    37.5% {
-        background-image: url('4.jpg');
-    }
-    50% {
-        background-image: url('5.webp');
-    }
-    62.5% {
-        background-image: url('6.jpg');
-    }
-    75% {
-        background-image: url('7.jpg');
-    }
-    87.5% {
-        background-image: url('8.jpg');
-    }
-}
