@@ -133,14 +133,43 @@
     class="btn btn-main-md bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out"
     target="_blank">Submit paper</a>
 
-<!-- Add some space here -->
-<div style="margin: 20px;"></div>
+<!-- Add some space -->
+<div class="my-6"></div>
 
-<marquee bgcolor="orange">
-    <b><span style="color: blue;">Paper Submission deadline is 30 October, 2024</span></b>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="cfp.html" target="_blank" style="color: blue;">Click here for more details</a>
-</marquee>
+<!-- Modern Animated Marquee -->
+<div class="relative overflow-hidden bg-yellow-400 py-3 border-2 border-yellow-500 rounded-lg shadow-md">
+  <div class="animate-marquee whitespace-nowrap">
+    <span class="font-bold text-blue-900 text-lg">
+      📢 Paper Submission Deadline is <span class="text-black font-extrabold">15th January, 2026</span>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="cfp.html" target="_blank" class="text-blue-800 underline hover:text-blue-900 font-semibold">
+      Click here for more details →
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="font-bold text-blue-900 text-lg">
+      📢 Paper Submission Deadline is <span class="text-black font-extrabold">15th January, 2026</span>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="cfp.html" target="_blank" class="text-blue-800 underline hover:text-blue-900 font-semibold">
+      Click here for more details →
+    </a>
+  </div>
+</div>
+
+<!-- Marquee Animation -->
+<style>
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  display: inline-block;
+  min-width: 100%;
+  animation: marquee 18s linear infinite;
+}
+</style>
+
 
     
 

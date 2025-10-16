@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <title>RACISE 2024 - NERIST</title>
+    <title>RAMEA 2026 - NERIST</title>
 </head>
 
 <body>
@@ -18,8 +18,7 @@
                         <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
 
                 <img src="logo.png" alt="Logo" class="h-8 w-auto">
-                <span class="self-center text-2xl font-bold whitespace-nowrap text-blue-700 dark:text-white">RACISE
-                    2024</span>
+                <span class="self-center text-2xl font-bold whitespace-nowrap text-blue-700 dark:text-white">RAMEA 2026</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -101,10 +100,70 @@
             </div>
         </div>
     </nav>
+<!-- Fullscreen Coming Soon Section -->
+<section class="relative flex flex-col justify-center items-center h-screen overflow-hidden bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-800 text-white">
+  
+  <!-- Animated Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 opacity-20 blur-3xl animate-gradientMove"></div>
+  
+  <!-- Floating Particles -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute bg-white opacity-30 rounded-full w-2 h-2 animate-float delay-75"></div>
+    <div class="absolute bg-white opacity-40 rounded-full w-3 h-3 animate-float delay-150"></div>
+    <div class="absolute bg-white opacity-20 rounded-full w-1 h-1 animate-float delay-300"></div>
+    <div class="absolute bg-white opacity-30 rounded-full w-2 h-2 animate-float delay-500"></div>
+  </div>
 
-    <div class="text-center relative mt-32">
-        <h1>To Be Updated Soon</h1>
+  <!-- Main Text -->
+  <div class="relative z-10 text-center">
+    <h1 class="text-6xl md:text-7xl font-extrabold tracking-widest animate-pulse drop-shadow-lg">
+      🚧 To Be Updated Soon 🚧
+    </h1>
+    <p class="mt-6 text-lg md:text-2xl text-gray-200 font-medium animate-fadeIn">
+      Exciting updates are on the way! Stay tuned for announcements and new details.
+    </p>
+    <div class="mt-10">
+      <a href="index.html" 
+         class="bg-yellow-400 text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-300 hover:scale-105 transition-transform duration-300">
+         Back to Home
+      </a>
     </div>
+  </div>
+
+</section>
+
+<!-- Custom Animations -->
+<style>
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradientMove {
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) translateX(0); opacity: 0.5; }
+  50% { transform: translateY(-30px) translateX(20px); opacity: 1; }
+  100% { transform: translateY(0) translateX(0); opacity: 0.5; }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+  top: calc(50% - 2rem);
+  left: calc(50% - 2rem);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+</style>
+
 </body>
 
 </html>
